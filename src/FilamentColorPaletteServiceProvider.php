@@ -1,13 +1,13 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace RyanChandler\FilamentColorPalette;
 
 use Filament\PluginServiceProvider;
 use Spatie\LaravelPackageTools\Package;
 
-class SkeletonServiceProvider extends PluginServiceProvider
+class FilamentColorPaletteServiceProvider extends PluginServiceProvider
 {
-    public static string $name = 'skeleton';
+    public static string $name = 'filament-color-palette';
 
     protected array $resources = [
         // CustomResource::class,
@@ -22,15 +22,15 @@ class SkeletonServiceProvider extends PluginServiceProvider
     ];
 
     protected array $styles = [
-        'plugin-skeleton' => __DIR__ . '/../resources/dist/skeleton.css',
+        'plugin-filament-color-palette' => __DIR__ . '/../resources/dist/filament-color-palette.css',
     ];
 
     protected array $scripts = [
-        'plugin-skeleton' => __DIR__ . '/../resources/dist/skeleton.js',
+        'plugin-filament-color-palette' => __DIR__ . '/../resources/dist/filament-color-palette.js',
     ];
 
     // protected array $beforeCoreScripts = [
-    //     'plugin-skeleton' => __DIR__ . '/../resources/dist/skeleton.js',
+    //     'plugin-filament-color-palette' => __DIR__ . '/../resources/dist/filament-color-palette.js',
     // ];
 
     public function configurePackage(Package $package): void
